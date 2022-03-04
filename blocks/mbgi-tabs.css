@@ -1,0 +1,68 @@
+:root{
+	--borderradius: 10px;
+}
+.mbgi-block-tabs{
+	-webkit-box-shadow: 0px 20px 15px 0px #15212e4d;
+	box-shadow: 0px 20px 15px 0px #15212e4d;
+	border-top-left-radius: var(--borderradius);
+	border-top-right-radius: var(--borderradius);
+	margin: 40px 0px;
+	}
+	.tabs-navbar{
+		display: flex;
+		cursor: pointer;
+		}
+		.tab-header{
+			flex: 1;
+			text-align: center;
+			padding: 10px 5px;
+			}
+			.tab-header p{
+				font-family: "Arvo";
+				user-select: none;
+				font-weight: 700;
+			}
+			.tab-header.active{
+				background: var(--backgroundSubmenu);
+				}
+				.tab-header.active:hover {
+					background: var(--backgroundSubMenuItemHover);
+				}
+				.tab-header.active p {
+					color: #ffffff;
+				}
+				.tab-header.active:hover p{
+					color: white;
+				}
+			.tab-header {
+				background: #ECF0F7;
+				border-right: 3px solid #ffffff;
+				}
+				.tab-header:hover {
+					background: rgba(93, 107, 132, 0.5);
+					}
+					.tab-header:hover p {
+						color: var(--colorTableHead);
+					}
+				.tab-header p {
+					color: var(--colorTableRow);
+				}
+			.tab-header:first-child{
+				border-top-left-radius: var(--borderradius);
+			}
+			.tab-header:last-child{
+				border-top-right-radius: var(--borderradius);
+				border-right: none;
+			}
+
+	.tabs-content .tab{
+		display: none;
+		padding: 0 20px 80px;
+		padding-top: 40px;
+		}
+		.tabs-content .tab.active{
+			display: block;
+			}
+		.tabs-content .tab > *:first-child {
+			margin-top: 0px;
+		}

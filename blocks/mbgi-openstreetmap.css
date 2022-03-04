@@ -1,0 +1,61 @@
+#mbgi-openstreetmap-wrap {
+	height: 500px;
+	max-width: 840px;
+	margin: 0 auto 60px;
+	background-color: #ECF0F7;
+	}
+	.leaflet-container {
+		filter: grayscale(1);
+	}
+	#mbgi-openstreetmap-overlay {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		}
+		#mbgi-openstreetmap-wrap .mbgi-openstreetmap-marker {
+			color: #DCE2ED;
+			font-size: 71px;
+			margin-bottom: 40px;
+		}
+		#mbgi-openstreetmap-wrap .mbgi-openstreetmap-anzeigen {
+			color: #AEBAD0;
+			font-size: 22px;
+			font-weight: bold;
+			text-align: center;
+		}
+		#mbgi-openstreetmap-wrap .mbgi-openstreetmap-datenschutz {
+			width: 100%;
+			color: #AEBAD0;
+			text-align: center;
+			}
+			#mbgi-openstreetmap-wrap .mbgi-openstreetmap-datenschutz a {
+				color: #b0bcd1;
+			}
+		#mbgi-openstreetmap-button {
+			border: 0;
+			margin-top: 40px;
+			}
+			#mbgi-openstreetmap-button:hover {
+				background-color: var(--hellgruen);
+			}
+
+/* Platzhalteranzeige für den Blockeditor */
+body.wp-admin #mbgi-openstreetmap-wrap {
+	background-color: #D3D3D3;
+}
+body.wp-admin #mbgi-openstreetmap-wrap::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	content: "Platzhalter Karte";
+	font-size: xx-large;
+}
+
+body.wp-admin #mbgi-openstreetmap-button,
+body.wp-admin #mbgi-openstreetmap-checkbox-wrap,
+body.wp-admin #mbgi-openstreetmap-wrap p {
+	display: none;
+}

@@ -1,0 +1,168 @@
+/*
+ *	Um das Hauptmenü auch im Desktop Hamburgertechnisch zum Laufen zu bekommen
+ *	wird es ausnahmsweise Mobile first gestartet und dann via Classnames getrennt.
+ */
+ 
+/*Hamburger Menü-Icons*/
+.header-menu .close-menu,
+.header-menu .hamburger-menu{
+	display:block;
+	cursor: pointer;
+	}
+	.header-menu .close-menu:after,
+	.header-menu .hamburger-menu:after{
+		font-family: "Font Awesome 5 Free";
+		font-size: 22px;
+		font-weight: 700;
+		color:white;
+		}
+	.header-menu .hamburger-menu:after{
+		content: "\f0c9";
+		}
+	.header-menu .close-menu:after{
+		content: "\f00d";
+		}
+	
+/*Menü Wrapper*/
+.header-menu .menu-hauptmenue-container {
+	transform: translateY(-100%);
+	transition: all 0.3s ease-in-out;
+	display: block;
+	position: absolute;
+	left: 0;
+    top: 0;
+   	height: auto;
+    width: 100%;
+    background: var(--hellgruen);
+	opacity:0
+	}
+.header-menu .menu-hauptmenue-container.menu-open{
+	opacity:1
+}
+	.header-menu .menu-hauptmenue-container .header-nav{
+	    position: relative;
+	    padding:20px 40px;
+		}
+
+		/*MenüPunkte*/			
+		.header-menu .menu-hauptmenue-container ul.header-nav li a{
+			color:var(--dunkelgruen);
+			font-size: 16px;
+			padding:15px 0;
+			word-wrap: break-word;
+			display: block;
+			position: relative;
+		}
+		.header-menu .menu-hauptmenue-container ul.header-nav > li:first-child a{
+			padding:0 0 20px;
+		}
+		
+			
+
+@media (min-width:1112px) {	
+	/*MainMenü*/
+	.header-menu .menu-hauptmenue-container .header-nav li {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		border-right: 1px solid var(--dunkelgruen);
+		}
+	.header-menu .menu-hauptmenue-container .header-nav > li {
+		width: 33%;
+		}
+		.header-menu .menu-hauptmenue-container .header-nav li:hover {
+			background-color: var(--mittelgruen);
+			}
+			.header-menu .menu-hauptmenue-container .header-nav li:hover > a {
+				background: transparent;
+				color:#ffffff;
+				}
+			.header-menu .menu-hauptmenue-container ul.header-nav li a,
+			.header-menu .menu-hauptmenue-container ul.header-nav li:first-child a{
+				padding:20px;
+				width: 100%;
+				}
+
+			/*Submenü*/
+			.header-menu .menu-hauptmenue-container .header-nav li.menu-item-has-children:after {
+				content: "\f054";
+				font-family: "Font Awesome 5 Free";
+				color: var(--dunkelgruen);
+				font-weight: 700;
+				margin-right: 40px;
+				}
+				.header-menu .menu-hauptmenue-container .header-nav li .sub-menu{
+					position: absolute;		
+					width: calc(100% + 20px);		
+					left: 100%;
+					top: 0;
+					padding-left:40px;
+					visibility: hidden;
+					opacity:0;
+					transition: all 0.3s ease-in-out;
+					}
+
+				.header-menu .menu-hauptmenue-container .header-nav > li > .sub-menu > li:hover .sub-menu ,
+				.header-menu .menu-hauptmenue-container .header-nav > li:hover > .sub-menu {
+					visibility: visible;
+					opacity: 1;
+					}
+					
+	/*MainMenü-Standard (kein Hamburger)*/
+	.header-menu.hamburger-off .hamburger-menu{
+		display:none;
+	}
+	.header-menu.hamburger-off .menu-hauptmenue-container {
+	    transform: inherit;
+	    position: relative;
+	    opacity: 1;
+	    background: transparent;
+	    width: auto;
+		z-index: 3;
+	    }
+	    .header-menu.hamburger-off .menu-hauptmenue-container .header-nav{
+		    display: flex;
+		    flex-wrap: wrap;
+		    padding:0;
+	    	}
+	    	.header-menu.hamburger-off  .menu-hauptmenue-container ul.header-nav li{
+		    	border-right: 0;
+		    	justify-content: flex-end;
+		    	width: auto;
+		    	}
+				.header-menu.hamburger-off  .menu-hauptmenue-container ul.header-nav li a{
+					color:white;
+					padding: 26px;
+					display: block;
+					font-weight: bold;
+					font-size: 18px;
+					}
+					/*Submenu*/
+					.header-menu.hamburger-off .menu-hauptmenue-container .header-nav li.menu-item-has-children:after{
+						content:"";
+					    margin-right: 0;
+						}
+					.header-menu.hamburger-off  .menu-hauptmenue-container ul.header-nav .sub-menu{
+						padding-left: 0;
+						z-index: 3;
+						background: transparent linear-gradient(180deg, #FFFFFF 0%, rgba(10, 50, 30,.2) 0%, #80808000 100%) 0% 0% no-repeat padding-box;
+						background-color: var(--mittelgruen);
+						width: 100%;
+						left: 0;
+						top: 75px;
+						min-width: 250px;
+						}
+}
+
+@media (min-width:768px) {
+	.header-menu .close-menu:before,
+	.header-menu .hamburger-menu:before {
+		content: "Menü";
+		color: white;
+		font-family: "Arvo";
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-right: 15px;
+		}
+}

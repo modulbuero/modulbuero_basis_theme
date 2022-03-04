@@ -1,0 +1,14 @@
+/**
+ *
+ *  "Einleitung" wurde umbenannt in "Grüner Absatz"
+ *  Dir Klassen und Variablen heißen hier noch ..einleitung Im Editor ist der Block aber under "Grüner Absatz" zu finden
+ *  20210920@bvd
+ *
+ */
+
+.mbgi-block-einleitung .einleitung-wrap .einleitung {
+    color: #68BD4B;
+    line-height: 150%;
+    font-size: 22px;
+    margin-bottom: 120px;
+}

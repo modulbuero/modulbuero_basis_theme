@@ -1,0 +1,26 @@
+.mbgi-block .socialmedia-wrap {
+	margin-bottom: 80px !important;
+}
+#sidebar .mbgi-block .socialmedia-wrap {
+	margin-bottom: 0 !important;
+}
+
+.post-content .socialmedia-wrap{
+	text-align: center;
+}
+
+.mbgi-block .socialmedia-wrap a {
+	background-color: #0A321E;
+	border-radius: 50%;
+	color: #ffffff;
+	margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+	}
+	.mbgi-block .socialmedia-wrap a:hover {
+		background-color: #68BD4B;
+	}

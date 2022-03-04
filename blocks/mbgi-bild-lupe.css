@@ -1,0 +1,48 @@
+.mbgi-block-bild-lupe .wrap{
+	position: relative;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+.mbgi-block-bild-lupe .wrap .lupe{
+	position: absolute;
+	top: 0;
+	right: 5%;
+	transform: translateY(-50%);
+	background-color: #68BD4B;
+	padding: 10px;
+	border-radius: 50%;
+	color: white;
+}
+
+.mbgi-block-bild-lupe .lupe-lightbox{
+	display: none; /* wird über js zu display flex */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgb(0 0 0 / 70%);
+	z-index: 100000;
+}
+
+.mbgi-block-bild-lupe .wrap img {
+    box-shadow: rgb(0 0 0 / 30%) 0px 65px 80px -50px;
+    border-radius: 5px;
+    border: 0.5px solid #5D6B844D;
+	width: 100%;
+}
+/*fix für Verwendung in Spalten*/
+.wp-block-columns .wp-block-column .mbgi-block-bild-lupe {
+	padding: 0!important;
+}
+
+.mbgi-block-bild-lupe {
+	margin-bottom: 80px !important;
+}
+
+@media (max-width:960px) {
+	.mbgi-block-bild-lupe {
+		padding: 0 !important;
+	}
+}

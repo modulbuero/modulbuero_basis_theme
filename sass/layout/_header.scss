@@ -1,0 +1,27 @@
+#header-wrap .social-media a {
+	text-decoration: none;
+	padding-left: 20px;
+	display: inline-block;
+	font-size: 13px;
+	}
+	
+	#header-wrap .social-media a:before {
+		font-family: "Font Awesome 5 Brands";
+		font-weight: 700; 
+		margin-right: 10px;
+		}
+	#header-wrap .social-media a.facebook:before {
+		content: "\f39e";
+		}
+	#header-wrap .social-media a.twitter:before {
+		content: "\f099";
+		}
+	#header-wrap .social-media a.instagram:before {
+		content: "\f16d";
+		}
+
+.header-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}

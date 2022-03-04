@@ -1,0 +1,403 @@
+.mbgi-block-aktuelles{
+	margin-bottom: 120px;
+}
+
+.mbgi-block-aktuelles h2 {
+	margin-bottom: 50px;
+}
+/*Filter Menü*/
+.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	}
+/*Filter Menü Select*/	
+.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul{
+	margin-bottom:20px; /*40 with li margin-bottom*/
+	}
+.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul li .mbgi-filter-item{
+	display:none;
+	padding:10px 25px 10px;
+	}
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul li:hover {
+		background-color: var(--hellgruen);
+		border: 1px solid var(--hellgruen);
+		color: #fff;
+	}
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul li:hover i,
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul li:hover span {
+		/*color: var(--graublau);*/
+		color: #fff;
+	}
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul li:hover span.mbgi-filter-item {
+		color: var(--graublau);
+	}
+		
+	/*Menü-Punkte*/	
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li:not(:last-child){
+		margin-right: 10px;
+		}
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul li .mbgi-filter-item,
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul > li{
+		border-radius:22px;
+		background-color: #ECF0F7;
+		border:1px solid #AEBAD0;
+		color: var(--graublau);
+		line-height: inherit;
+		}
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu:not(.mbgi-is-gruenesinternet-basic) > ul > li:nth-last-child(1):nth-child(n+4){ 
+		background-color: transparent; 
+		/* Die Filter Funktionen liegen im letzten li und das ist nach "kachel", "liste" und "alles" mindestens das vierte und gleichzeitig immer das letzte!*/
+		}
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul > li:nth-child(4){
+			border:0;	
+			}
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li:not(:last-child){
+			
+		}	
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu li:not(:last-of-type){
+			padding-bottom:0
+		}
+
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul > li,
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul > li > ul > li {
+		font-size: 16px;
+		padding-left:0;
+	}	
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul > li{
+		margin-bottom: 20px; /* +ul margin-bottom= 40px */
+		}
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li ul{
+			padding:0;
+			margin-top: 0;
+		}
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li ul li{
+			margin-bottom: 0 !important;
+		}
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li a {
+			text-decoration: none;
+			padding: 10px 20px;
+			display: inline-block;
+		}
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li:before {
+			content: none;
+		}
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li.active {
+		background-color: var(--hellgruen);
+		border: none;
+		}
+		
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li i {
+		padding-right: 10px; 
+	}
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li i + a {
+		padding:10px 25px 10px 0;
+	}
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li.active a span,
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li.active a,
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li.active i {
+		color: white;
+		}
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu:not(.mbgi-is-gruenesinternet-basic) > ul > li:nth-child(2) {
+		position: relative;
+		margin-right: 40px;
+		}	
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu:not(.mbgi-is-gruenesinternet-basic) > ul > li:nth-child(2):after {
+		    content: "";
+		    border-right: 1px solid #AEBAD0;
+		    margin-left: 10px;
+		    height: 80%;
+		    position: absolute;
+		    right: -24px;
+			top: 10%; /* 1/2 height */
+		}
+	/*Hover*/
+	.mbgi-filter-menu li:hover,
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul > li:not(:nth-last-child(1)):not(:nth-child(n+4)):hover{
+		/* Die Filter Funktionen liegen im letzten li und das ist nach "kachel", "liste" und "alles" mindestens das vierte und gleichzeitig immer das letzte!*/
+		background-color: var(--hellgruen) !important;
+		border-color: var(--hellgruen)  !important;
+		}
+		.mbgi-filter-menu li:hover a,
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu:not(.mbgi-is-gruenesinternet-basic) > ul > li:hover > a span,
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu:not(.mbgi-is-gruenesinternet-basic) > ul > li:hover > a,
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu:not(.mbgi-is-gruenesinternet-basic) > ul > li:hover > a > i {
+			color:white !important;
+		}
+	
+/*Listenansicht*/
+.mbgi-listenansicht-head{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	color: white;
+	background: var(--hellgruen);
+	border-radius: 5px;
+	height: 50px;
+	align-items: center;
+	}
+	.mbgi-listenansicht-head .mbgi-listenansicht-content{
+		display: flex;
+		width: 87%;
+		padding-left: 25px;
+		margin-right:-15px;
+	}
+	.mbgi-listenansicht-head .mbgi-listenansicht-time{
+		}
+		.mbgi-listenansicht-head .mbgi-listenansicht-content .mbgi-listenansicht-head-title{
+			min-width: 200px;
+		}
+		
+.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap{
+	flex-direction: column;
+	display: flex;
+	margin-bottom: 70px !important;
+	grid-row-gap: 0;
+	}
+	.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article{
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		width: 100%;
+		min-height: 0;
+		height: auto;
+		background-color: transparent !important;
+		margin-bottom: 0 !important;
+		border-bottom: 1px solid #DCE2ED;
+		padding: 22px 20px;
+		}
+		
+		/*Datum*/
+		.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .date-wrap-container{
+			background-color: unset;
+			height:auto;
+			}
+			.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .date-wrap-container .date-wrap{
+				background-color: white;
+				padding: 0;
+				justify-content: flex-end !important;
+				left: 0;
+				}
+				.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .publish-date{
+					color: var(--graublau);
+					position: relative;
+					left:0;
+				}
+				.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .more:before,
+				.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .more,
+				.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article:hover .more,
+				.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .post-content-wrapper .excerpt{
+					display: none;
+				}
+
+		/*Inhalt*/
+		.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article{
+			transition: all 0.3s ease-in-out;
+			border-left: 5px solid #fff;
+			}
+		.mbgi-block-aktuelles.listenansicht article:hover{
+			box-shadow: 0px 3px 10px #5D6B8433;
+			border-left: 5px solid var(--hellgruen);
+			}
+			.mbgi-block-aktuelles article a{
+				z-index: 1;
+				}
+				.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .post-content{
+					width: 87%;
+					padding: 0 !important;
+					}    
+					body .mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .post-content-wrapper{
+						display: flex;
+						flex-direction: row;
+						padding: 0 !important;
+						justify-content: flex-start;
+						}
+						.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .post-content-wrapper .post-loop-title{
+							order:1;
+							padding: 0;
+							margin: 0;
+							font-weight: 400;
+							font-family: 'PT Sans';
+							font-size: 16px;
+							color: var(--graublau) !important;
+							}	
+						.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .post-content-wrapper .post-type{
+							position: relative;
+							bottom: auto;
+							order:0;
+							min-width:200px;
+							font-weight: normal;
+						}
+
+			.mbgi-block-aktuelles .video .post-loop-title:after,
+			.mbgi-block-aktuelles .medien .post-loop-title:after {
+				font-family: "Font Awesome 5 Free";
+				content: " \f35d";
+				font-weight: bold;
+				margin-left: 10px;
+				font-size: 18px;
+			}
+			.mbgi-block-aktuelles.listenansicht .medien .post-loop-title:after,
+			.mbgi-block-aktuelles.listenansicht .video .post-loop-title:after{
+				font-size: 12px;
+			}
+
+@media (max-width:1280px) {
+	
+	.post-loop-single-wrap article .publish-date {
+		white-space: nowrap;
+		padding-left: 40px;
+	}
+	
+	#sidebar.sb-open + #content .block-aktuelles-wrap {
+	    grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width:1112px) {
+	/*Filter*/
+.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul li .mbgi-filter-item{
+	display:block;
+	}
+
+	.mbgi-filter-menu{
+		flex-direction: column;
+		position: absolute;
+		border:1px solid #AEBAD0;
+		border-radius:22px;
+		z-index: 1;
+		background-color: white;
+		}
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li ul{
+			width:auto;
+		}
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li .mbgi-filter-menu li{
+			border:0;
+			margin-right: 0;
+		}
+		.mbgi-filter-menu li:not(:first-child){
+			display:none;
+		}
+		.mbgi-filter-menu li:first-child{
+			padding: 10px 35px 10px 25px;
+			margin-right: 0 !important;
+			display: block;
+		    
+			}
+			.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul li .mbgi-filter-item:after{
+				content:' \f0dd';
+				font-family: 'Font Awesome 5 Free';
+				color:var(--graublau);
+				font-weight: 700;
+				margin-left: 10px;
+				top:-2px;
+			    position: relative;
+			}
+		.mbgi-filter-menu li:first-child:hover{
+			cursor: pointer;
+			background-color: var(--hellgruen);
+			color:#ffffff;
+		}
+		.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li .mbgi-filter-menu li:not(:first-child){
+			background-color: transparent;
+			}
+			.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li .mbgi-filter-menu li:not(:first-child) a{
+				 display: block
+				 }
+			.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li .mbgi-filter-menu li:nth-child(2) a{
+				border-radius: 22px 22px 0 0;
+				}
+			.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li .mbgi-filter-menu li:last-child a{
+				border-radius: 0 0 22px 22px;
+				}
+			.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li .mbgi-filter-menu li:not(:first-child):hover a{
+				background-color:var(--hellgruen);
+				}
+				.mbgi-filter-menu li.active a{
+					color:var(--graublau) !important;
+					font-weight: 700;
+				}
+
+		.mbgi-filter-menu-close{
+			display: block;
+			display:none;
+		}
+		.mbgi-filter-menu-close:before{
+			content: "\f00d";
+		    font-family: "Font Awesome 5 Free";
+		    color: var(--graublau);
+		    font-size: 15px;
+		    background-color: #ffffff;
+		    padding: 12px 14px;
+		    font-weight: 700;
+		    box-shadow: 0px 3px 10px #5d6b844d;
+		    border-radius: 100%;
+		    position: absolute;
+		    top: -25px;
+		    right: 0;
+		    transition: transform 0.3s ease-in-out;
+		    cursor: pointer;
+			}
+}
+
+@media (max-width:960px) {
+	.mbgi-listenansicht-head .mbgi-listenansicht-content .mbgi-listenansicht-head-title,
+	.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .post-content-wrapper .post-type{
+		min-width: 135px;
+	}
+}
+
+@media (max-width:635px) {
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul > li > a > span{
+		display:none;
+	}
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li i{
+		padding-right: 0;
+	}
+	
+	.mbgi-listenansicht-head .mbgi-listenansicht-time,
+	.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .date-wrap-container{
+		display:none;
+	}
+	.mbgi-listenansicht-head .mbgi-listenansicht-content,
+	.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap article .post-content{
+		width:100%;
+	}
+}
+
+@media (max-width:480px) {
+	.mbgi-block-aktuelles.listenansicht .post-loop-single-wrap {
+		overflow-x: visible;
+	}
+}
+
+@media (max-width:414px) {
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li ul{
+		position: absolute;
+		right: 20px;
+    }
+}
+
+@media (max-width:360px) {
+	.home h2{
+		font-size:38px;
+	}
+	
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul li:not(:last-child){
+		margin-right: 10px;
+    }
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul > li > a,
+    .mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul li .mbgi-filter-item{
+	    padding:10px 20px;
+    }
+}
+
+@media (max-width:320px) {
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu ul > li > a,
+    .mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul li .mbgi-filter-item{
+	    padding:10px 18px;
+    }
+	.mbgi-block-aktuelles .mbgi-aktuelles-filter-menu > ul li .mbgi-filter-item:after{
+			margin-left:2px;
+	}
+}

@@ -1,0 +1,146 @@
+.mbgi-block-themen-slider {
+	margin: 0 auto;
+	margin-bottom: 185px; /*Buttons sind H=55px und Absolut positioniert deswegen 185px*/
+	position: relative;
+	max-width: 1360px;
+	padding: 0 20px;
+	padding-bottom: 0!important; /* fix für Buttons */
+	width:100%;
+	}
+	.mbgi-block-themen-slider h2.block-title {
+		
+	}
+	.mbgi-block-themen-slider .block-themen-slider-wrap{
+		position: relative;
+		overflow-x: hidden;
+	    min-height: 530px;
+		}
+		.mbgi-block-themen-slider .block-themen-slider-wrap .slideshow{
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			transition: all 0.5s ease-in-out;
+			position: absolute;
+			}
+			.mbgi-block-themen-slider .block-themen-slider-wrap .slideshow a{
+				text-decoration: none;
+			}
+		.mbgi-block-themen-slider .block-themen-slider-wrap .thema-post-wrap{
+			padding: 0 20px;
+			}
+			.mbgi-block-themen-slider .block-themen-slider-wrap .thema-post-wrap .post-thumbnail-wrap {
+				margin-bottom: 30px;
+				overflow: hidden;
+			}
+			.mbgi-block-themen-slider .block-themen-slider-wrap .thema-post-wrap .post-thumbnail {
+				height: 245px;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+				transition: transform .3s ease-out;
+			}
+			.mbgi-block-themen-slider .block-themen-slider-wrap .thema-post-wrap .post-thumbnail.platzhalterSonnenblume {
+				background-size: auto;
+				background-color: var(--hellgruen);
+				background-position-x: right;
+				}
+				.mbgi-block-themen-slider .block-themen-slider-wrap .thema-post-wrap:hover .post-thumbnail{
+					transform: scale(1.1);
+				}
+			.mbgi-block-themen-slider .block-themen-slider-wrap .thema-post-wrap .post-title {
+				display: block;
+				margin-bottom: 20px;
+				color: #0A321E;
+				font-size: 28px;
+				font-family: "PT Sans";
+				}
+			.mbgi-block-themen-slider .block-themen-slider-wrap .thema-post-wrap .post-excerpt {
+				margin-bottom: 20px;
+				color: #5D6B84;
+				font-size: 16px;
+				line-height: 26px;
+				}
+			.thema-post-wrap .mbgi-themen-button {
+				font-weight: 700;
+			}
+			
+	.mbgi-block-themen-slider .themen-slider-arrow-wrap {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		margin: 0 auto;
+		max-width: 160px;
+		padding: 0;
+		}
+		.mbgi-block-themen-slider .themen-slider-arrow-wrap .arrow{
+			position: absolute;
+			top: 50%;
+			cursor: pointer;
+			width: 55px;
+		    height: 55px;
+			padding-bottom: unset; /*sonst übernimmt padding-bottom 16px von anderem li Element aus style-gt-default.css*/
+		    background: var(--dunkelgruen);
+		    border-radius: 100%;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    padding:0;
+		}
+		.mbgi-block-themen-slider .themen-slider-arrow-wrap .arrow:not(.disabled):hover{
+			background-color: var(--hellgruen);
+		}
+		
+		.mbgi-block-themen-slider .themen-slider-arrow-wrap .arrow:before{
+			display: inline-block;
+			content:"";
+			width: 10px;
+			height: 100%;
+			background-size: contain;
+		    background-repeat: no-repeat;
+		}
+
+		.mbgi-block-themen-slider .themen-slider-arrow-wrap .arrow-left {
+			left: 10px;
+		}
+		.mbgi-block-themen-slider .themen-slider-arrow-wrap .arrow-right {
+			right: 10px;
+		}
+		.mbgi-block-themen-slider .themen-slider-arrow-wrap .arrow-left:before{
+			background-image: url('../images/pfeil-nach-links.svg');
+			background-position: 0px center;
+		}
+		.mbgi-block-themen-slider .themen-slider-arrow-wrap .arrow-right:before{
+			background-image: url('../images/pfeil-nach-rechts.svg');
+			background-position: 0px center;
+		}
+		.mbgi-block-themen-slider .themen-slider-arrow-wrap .arrow.disabled{
+			background: var(--hellgrau);
+			opacity: 0.5;
+		}
+
+@media(max-width:1112px) {
+	.mbgi-block-themen-slider .themen-slider-arrow-wrap .arrow:not(.disabled):hover{
+		background-color: var(--dunkelgruen);
+	}
+}
+
+@media(max-width:768px) {
+	.mbgi-block-themen-slider .themen-slider-arrow-wrap{
+		bottom:-25px;
+	}
+}
+
+@media(max-width:480px) {
+	.mbgi-block-themen-slider .themen-slider-arrow-wrap{
+		bottom:0;
+	}
+}
+
+@media(max-width:414px) {
+	.mbgi-block-themen-slider .post-excerpt{
+		padding-left:0 !important;
+		padding-right: 0 !important;
+	}
+}
