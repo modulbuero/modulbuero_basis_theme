@@ -1,0 +1,42 @@
+.mbgi-block.mbgi-block-akkordeon {
+	margin-bottom: 80px;
+	}
+
+.mbgi-block.mbgi-block-akkordeon.noBlockDistanceBottom {
+	margin-bottom: 15px; /* jedem mgbi-block wird bottom 120px gegeben - hier sind aber mehrere Akkordeons untereinander (script.js)*/
+	}
+
+	.mbgi-block.mbgi-block-akkordeon .akkordeon-wrap {
+		max-width: 840px;
+		margin: 0 auto;
+		background-color: #ECF0F7;
+		padding: 20px 30px;
+		}
+		
+		.mbgi-block.mbgi-block-akkordeon .akkordeon-wrap h2 {
+			color: var(--graublau);
+			font-size: 22px;
+			font-family: "PT Sans";
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 0;	
+			cursor: pointer;
+			margin-bottom: 0;
+			}
+	
+		.mbgi-block.mbgi-block-akkordeon .akkordeon-wrap p{
+			display:none;
+			padding: 20px 0 0;
+			margin-bottom: 0;
+		}
+	
+		.mbgi-block.mbgi-block-akkordeon .akkordeon-wrap h2.active:after,
+		.mbgi-block.mbgi-block-akkordeon .akkordeon-wrap h2:after{
+			font-family: "Font Awesome 5 Free"; 
+		    font-weight: 900;
+		    content: "\f067";
+		}
+		
+		.mbgi-block.mbgi-block-akkordeon .akkordeon-wrap h2.active:after{
+		    content: "\f068";
+			}

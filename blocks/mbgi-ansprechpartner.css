@@ -1,0 +1,72 @@
+.mbgi-block-ansprechpartner {
+	margin: 0 auto;
+	margin-bottom: 120px;
+	max-width: 400px;
+	width: 100%;
+}
+
+.mbgi-block-ansprechpartner .mbgi-ansprechpartner-info p {
+	margin: 0;
+	padding: 0;
+	}
+	.mbgi-block-ansprechpartner .mbgi-ansprechpartner-info p:last-of-type {
+		background-color: transparent !important;
+		color: #5D6B84 !important;
+	}
+
+.mbgi-block-ansprechpartner .mbgi-ansprechpartner-bild {
+	width: 100%;
+	padding-top: calc(9/16 * 100%); /*Seitenverhältnis 16/9*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.mbgi-block-ansprechpartner .mbgi-ansprechpartner-info {
+	background-color: #ECF0F7;
+	padding: 34px 40px 67px 40px;
+	font-family: "PT Sans";
+}
+
+body .mbgi-block-ansprechpartner .mbgi-ansprechpartner-name {
+	color: #0A321E !important;
+	font-size: 22px;
+	font-weight: bold;
+	background-color: transparent !important;
+}
+
+.mbgi-block-ansprechpartner .mbgi-ansprechpartner-position {
+	color: #9CAAC3;
+	font-size: 18px;
+	font-weight: bold;
+	padding-bottom: 20px !important;
+}
+
+.mbgi-block-ansprechpartner .mbgi-ansprechpartner-email {
+	color: #5D6B84;
+	font-size: 16px;
+}
+.mbgi-block-ansprechpartner .mbgi-ansprechpartner-tel,
+.mbgi-block-ansprechpartner .mbgi-ansprechpartner-fax {
+	color: #5D6B84;
+	font-size: 16px;
+}
+
+/* .page-id-176 .wp-block-columns .wp-block-column {
+	flex: 1;
+	width: calc(50% - 40px);
+	} */
+
+.mbgi-block-ansprechpartner p.mbgi-ansprechpartner-sonst{
+	padding-top:10px;
+}
+
+@media (max-width: 414px) { 
+	.mbgi-block-ansprechpartner .mbgi-ansprechpartner-info {
+		padding: 34px 20px 47px 20px; /*inside is a <p> width already 20px left and right*/
+	}
+	#main .post-content .mbgi-ansprechpartner-info p{ /*fix für style-mobile.css*/
+		padding-left: 0px!important;
+		padding-right: 0px!important;		
+	}
+}

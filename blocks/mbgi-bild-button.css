@@ -1,0 +1,32 @@
+/*fix für Verwendung in Spalten*/
+.wp-block-columns .wp-block-column .mbgi-block-bild-button {
+	padding: 0!important;
+}
+
+.mbgi-block-bild-button {
+	margin-bottom: 80px !important;
+}
+.mbgi-block-bild-button-wrap{
+	position: relative;
+}
+.mbgi-block-bild-button .mbgi-block-bild-button-bild {
+	padding-bottom: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.mbgi-block-bild-button .mbgi-block-bild-button-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+	.mbgi-block-bild-button .mbgi-block-bild-button-button:hover {
+		background-color: var(--hellgruen);
+	}
+
+@media (max-width:960px) {
+	.mbgi-block-bild-button {
+		padding: 0 !important;
+	}
+}

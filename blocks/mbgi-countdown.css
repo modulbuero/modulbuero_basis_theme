@@ -1,0 +1,168 @@
+/**
+ *  Countdown-Block
+ */
+ 
+ .mbgi-block-countdown{
+	 margin: 50px auto;
+	 max-width: 1280px;
+	 width: 100%;
+ }
+ 
+ .mbgi-countdown-title {
+	font-size: 32px;
+	font-family: "Arvo";
+	text-align: center;
+	letter-spacing: 0px;
+ }
+ .mbgi-block-countdown-content{
+	padding: 60px 40px;
+ }
+ .mbgi-countdown-date{
+	 flex-wrap: wrap;
+ }
+ .mbgi-block-countdown.mbgi-block .mbgi-countdown-date .mbgi-countdown-date-content p{
+	margin: 0 10px;
+	margin-bottom: 30px;
+ }
+
+ .mbgi-countdown-link {
+	 background-color: var(--dunkelgruen);
+	 border-radius: 30px;
+	 padding: 14px 20px;
+	 width: 100%;
+ 	}
+ 	.mbgi-countdown-link a {
+	 	text-decoration: none !important;
+	 	color: #ffffff;
+		font-family: "Arvo";
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 30px;
+		vertical-align: middle;
+ 		}
+ 		.mbgi-countdown-link:hover {
+	 		background-color: var(--hellgruen);
+ 		}
+ 		.typ-gruen .mbgi-countdown-link:hover {
+	 		background-color: #ffffff;
+ 			}
+ 			.typ-gruen .mbgi-countdown-link:hover a {
+	 			color: var(--dunkelgruen);
+ 			}
+
+.mbgi-block-countdown .mbgi-countdown-date p:first-of-type{
+	width: 90px;
+    height: 90px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 5px 5px 6px #15212e4d;
+    border-radius: 8px;
+    color: #5D6B84;
+    font-size: 40px;
+    margin: 0 15px;
+    margin-bottom: 30px;
+	}
+	.mbgi-block-countdown .mbgi-countdown-date p.days{
+		margin-left: 0;
+		}
+	.mbgi-block-countdown .mbgi-countdown-date p.seconds{
+		margin-right: 0;
+		}
+	.mbgi-block-countdown .mbgi-countdown-date p.ended-countdown{
+		width: 100%;
+		height: unset;
+		padding: 30px;
+		font-size: 28px;
+	}
+.mbgi-block-countdown .mbgi-countdown-date p:last-of-type {
+	font-family: "Arvo";
+	color: var(--hellgruen);
+	font-weight: 700;
+	font-size: 32px;
+	text-align: center;
+}
+
+	.mbgi-block-countdown-content > div:not(.mbgi-countdown-link){
+		margin-bottom: 45px;
+	}
+
+.mbgi-block-countdown .mbgi-countdown-title{
+	font-weight: 700;
+}
+/* Grün Variante */
+
+.mbgi-block-countdown.typ-gruen {
+	background-color: #68BD4B;
+	position: relative;
+	overflow: hidden;
+	}
+	.mbgi-block-countdown.typ-gruen:before {
+		content: "\f017";
+		font-family: "Font Awesome 5 Free";
+	    color: rgba(13,50,30,.5);
+	    font-size: 400px;
+	    position: absolute;
+	    transform: rotate(-20deg);
+	    left: -165px;
+	    top: 0;
+	}
+
+.mbgi-block-countdown.typ-gruen .mbgi-countdown-title{
+	color: var(--cd-gelb);
+}
+
+body.wp-admin .mbgi-block-countdown.typ-gruen .mbgi-countdown-date p:last-of-type {
+		color: #ffffff;
+	}
+
+
+
+
+/* Event Variante */
+.mbgi-block-countdown.typ-event{
+	flex-direction: column;
+}
+.mbgi-block-countdown.typ-event .green-bar{
+	width: 100%;
+	background: #68BD4B 0% 0% no-repeat padding-box;
+	padding: 15px 0px;
+	}
+	.mbgi-block-countdown.typ-event .green-bar a{
+		display: flex;
+		justify-content: flex-start;
+		text-decoration: none;
+		}
+		.mbgi-block-countdown.typ-event .green-bar a *{
+			font-size:18px;
+			line-height: 32px;
+			letter-spacing: 0px;
+			color: #FFFFFF;
+			text-align: left;
+			margin-left: 40px;
+		}
+		.mbgi-block-countdown.typ-event .green-bar a p{
+			font-family: "PT Sans";
+			margin-left: 20px;
+		}
+/* Standard Variante */
+
+.mbgi-block-countdown.typ-standard,
+.mbgi-block-countdown.typ-event{
+	background-color: #ECF0F7;
+}
+
+
+@media(max-width: 1280px) {
+
+}
+
+@media(max-width: 1024px) {
+}
+
+/*
+	Mobile
+*/
+@media(max-width: 960px) {
+}
+
+@media(max-width: 414px) {
+}

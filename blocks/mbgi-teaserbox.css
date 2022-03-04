@@ -1,0 +1,124 @@
+.mbgi-block-teaserbox .teaserbox-wrap{
+    display:flex;
+    justify-content: space-between;
+    align-items: stretch;
+    min-height: 400px;
+    max-width: 1280px;
+    margin: 0 auto 80px;
+    background-color: #68BD4B;
+    overflow: hidden;
+    }
+.mbgi-block-teaserbox:last-of-type .teaserbox-wrap{
+	margin: 0 auto;
+}
+    /*Bild*/
+    .mbgi-block-teaserbox .teaserbox-bild{
+        width: 50%;
+        display: block;
+        overflow: hidden;
+    	}
+    	.mbgi-block-teaserbox .teaserbox-bild .teaserbox-bild-inner {
+	    	 background-size: cover;
+			 height: 100%;
+			 transition: all 0.3s ease-in-out;
+			 display: block;
+			 background-position: center center;
+    	}
+    	
+    	.mbgi-block-teaserbox .teaserbox-bild .teaserbox-bild-inner:hover {
+	    	transform: scale(1.2);
+    	}
+
+    /*Text*/
+    .mbgi-block-teaserbox .teaserbox-text {
+        width: 50%;
+        padding: 40px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+    	}
+    	.mbgi-block-teaserbox .teaserbox-text:before {
+	    	content: "";
+	    	background-image: url("../images/Logo-teaserbox.svg");
+	    	width: 360px;
+	    	height: 360px;
+	    	background-position: right bottom;
+	    	position: absolute;
+	    	opacity: .15;
+	    	right: -25%;
+			top: 50%;
+			z-index: 0;
+    	}
+    	.mbgi-block-teaserbox .teaserbox-text h2 {
+	    	text-align: center;
+	    	color: #fff;
+	    	margin-bottom:20px
+    	}
+		.mbgi-block-teaserbox .teaserbox-text p {
+			font-size: 16px;
+			text-align: center;
+			color: #0A321E;
+			padding-bottom: 40px;
+		}
+
+	    .mbgi-block-teaserbox .teaserbox-text a{
+	        margin: 0 auto;
+	        background-color: #0A321E;
+	        border-radius: 23px;
+	        padding: 12px 40px;
+	        text-decoration: none;
+	        text-align: center;
+	        display: block;
+	        width: fit-content;
+	        position: relative;
+	    	}
+	    	.mbgi-block-teaserbox .teaserbox-text a span {
+		    	font-size: 16px;
+		    	font-weight: 700;
+		    	color: #fff;
+	    	}
+	
+	    .mbgi-block-teaserbox .teaserbox-text a:hover{
+	        background-color: #fff;
+	    	}
+	    	.mbgi-block-teaserbox .teaserbox-text a:hover span {
+		    	color: #0A321E;
+	    	}
+    	
+
+@media (max-width:1024px) {
+	.mbgi-block-teaserbox .teaserbox-wrap{
+		flex-direction: column;
+		}
+		.mbgi-block-teaserbox .teaserbox-bild{
+			width:100%;
+			}
+			.mbgi-block-teaserbox .teaserbox-bild .teaserbox-bild-inner{
+				height:0;
+				padding-bottom: 63%;
+			}
+			.wp-block-column .mbgi-block-teaserbox .teaserbox-bild .teaserbox-bild-inner{
+				padding-bottom: 111%;
+			}
+			
+	    .mbgi-block-teaserbox .teaserbox-text{
+			width: auto;
+			}
+}
+    	
+@media (max-width:568px) {    	
+    .mbgi-block-teaserbox .teaserbox-text{
+		padding: 40px 20px;		
+		}
+
+}
+@media (max-width:414px) { 
+    .mbgi-block-teaserbox .teaserbox-text p{
+	    padding:0 !important;
+	    }
+	.mbgi-block-teaserbox .teaserbox-text p{
+	    padding-bottom:20px !important;
+	    }
+}
