@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="380" height="40.5" viewBox="0 0 380 40.5">
+    <g id="Pfeil_zurück" data-name="Pfeil zurück" transform="translate(312 13.274)">
+      <path id="Pfad_4" data-name="Pfad 4" d="M0,0H8.974" transform="translate(-2.929 7.071) rotate(-45)" fill="rgba(0,0,0,0)" stroke="#0A321E" stroke-linecap="round" stroke-width="2"/>
+      <path id="Pfad_6" data-name="Pfad 6" d="M0,0H8.974" transform="translate(-2.929 7.071) rotate(45)" fill="rgba(0,0,0,0)" stroke="#0A321E" stroke-linecap="round" stroke-width="2"/>
+      <path id="Pfad_5" data-name="Pfad 5" d="M0,0H20" transform="translate(-2.929 7.071)" fill="rgba(0,0,0,0)" stroke="#0A321E" stroke-linecap="round" stroke-width="2"/>
+    </g>
+</svg>
