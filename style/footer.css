@@ -1,0 +1,36 @@
+footer{
+	background: var(--backgroundFooter);
+	padding-top:var(--abstandObenUnten);
+	padding-bottom:var(--abstandObenUnten); 
+}
+
+/*Scroll-to-Top*/
+.scroll-to-top-button-wrap{
+	height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    right: 20px;
+    bottom: -15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    }
+.scroll-to-top-button-wrap:hover{
+	background: rgba(255, 255, 255, 0.2);;
+}
+	.scroll-to-top-button-wrap .fa-arrow-up:before{
+		color:white;
+	}
+	
+/*Copyright Info*/
+footer .copyright-info span{
+	color:var(--colorCopyright);
+	}
+	footer .copyright-info .herz:after,
+	footer .copyright-info a{
+		color:var(--colorCopyrightLink);
+	}

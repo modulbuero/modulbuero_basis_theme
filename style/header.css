@@ -1,0 +1,58 @@
+header{
+	background: var(--backgroundHeader);
+	z-index: 1;
+	position: fixed;
+}
+header .wp-block-columns,
+header .wp-block-image{
+	margin-bottom:0
+	}
+	
+	/*Menü*/
+	header .widget_nav_menu,
+	header .widget_nav_menu ul{
+		display:flex
+	}
+	header ul{
+		list-style-type: none;
+	}
+	header .widget_nav_menu{
+		align-items: center;
+		justify-content: flex-end;
+		}
+		
+		header .widget_nav_menu ul li a{
+			padding:var(--abstandMenuItem);
+			color:var(--colorMenuItem);
+			display: block;
+			}
+		header .widget_nav_menu ul li:hover a{
+			background:var(--backgroundMenuItemHover);
+			color:var(--colorMenuItemHover);
+			}
+			
+			/*SubMenü*/
+			header .widget_nav_menu ul.sub-menu{
+				flex-direction: column;
+				display: none;
+				position: absolute;
+				top:calc(100% - 1px);
+				z-index: 3;
+				min-width: 250px;
+				background: var(--backgroundSubmenu);
+				}
+				
+			header .widget_nav_menu ul.menu li:hover ul.sub-menu{
+				display:flex;
+				color:red;
+				}
+				header .widget_nav_menu ul.sub-menu li:hover a{
+					background:var(--backgroundSubMenuItemHover);
+					color:var(--colorSubMenuItemHover);
+				}
+			 
+			header .widget_nav_menu ul > li:last-child .sub-menu{
+				right:0;
+				left: 100%;
+				transform: translateX(-100%);
+			}

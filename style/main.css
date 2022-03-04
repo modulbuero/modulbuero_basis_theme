@@ -1,0 +1,115 @@
+/*Abstand nach untent*/
+main .wp-block-quote,
+main ul,
+main ol,
+main .wp-block-verse,
+main .wp-block-table,
+main .wp-block-image,
+main .wp-block-cover,
+main .wp-block-separator,
+main .wp-block-buttons,
+main .wp-block-gallery,
+main .wp-block-media-text,
+main .wp-block-table,
+main .distanceBottom,
+main .thumb-wrap,
+main .social-media-buttons,
+main .kommentar-container,
+main .archive-after,
+main .single-after,
+main .page-after,
+main .index-after,
+main .loop{
+	margin-bottom:var(--abstandUntenTxtElement);	
+}
+	/*Abstand nach untent Reset*/
+	main .thumb-wrap p,
+	main .wp-block-buttons .wp-block-button,
+	main .wp-block-gallery ul,
+	main ul li ul,
+	main ol li ol{
+		margin-bottom:0;
+	}
+
+
+/*Beitragsbild*/
+main .thumbnail{
+	padding-bottom: 54%;
+    height: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	}
+main .thumb-wrap .copyright{
+	font-size: var(--smallFont);
+}
+
+/*Listen*/
+main ul,
+main ol{
+	margin-left:35px;
+	}
+
+/*Trenner*/
+.wp-block-separator{
+	
+}
+
+/*Vers*/
+main .wp-block-verse{
+	font-style: italic;	
+}
+
+/*Pullquote*/
+main .wp-block-pullquote p{
+	font-size:var(--headline-4);
+	line-height: var(--lineHeightHeadline-4);
+}
+
+/*Tabelle*/
+main table{
+	border: 1px solid var(--colorBorderTable);
+	margin-bottom:var(--abstandUntenParagraph);
+	}
+	main table tr:not(:last-child){
+			border-bottom: 1px solid var(--colorBorderTable);		
+		}
+		main table td:not(:last-child){
+			border-right: 1px solid var(--colorBorderTable);		
+		}
+		main table td{
+			padding: 10px;
+		    }
+		main table tr:nth-child(odd){
+			background: var(--colorTableRow);
+		}
+		main table tr:first-child{
+			background: var(--colorTableHead);
+			font-weight: 700;
+		}
+		
+		   
+/*Button*/ 
+.wp-block-button__link{
+	background-color:var(--colorButton);
+	color:var(--colorButtonText);
+}
+.wp-block-button__link:hover{
+	background-color:var(--colorButtonHover);
+	color:var(--colorButtonTextHover);
+	
+}
+
+
+/*SocialMediaButtons*/
+.social-media-buttons a:not(:last-child){
+	padding-right: 10px;	
+}
+
+
+/*Fixes*/
+main .publish-date,
+main .wp-block-quote p,
+main .wp-block-pullquote p{
+	margin-bottom:var(--abstandUntenParagraph);
+}

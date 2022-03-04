@@ -1,0 +1,56 @@
+:root{
+	--containerMaxWidth: 1406px;
+	--abstandUntenContainer: 80px;
+	--abstandUntenHeadline: 40px;
+	--abstandUntenTxtElement: 40px;
+	--abstandSeiten: 40px;
+	--abstandObenUnten: 40px;
+	--abstandUntenParagraph: 10px;
+	--abstandUntenHeadline-2: 20px;
+	--abstandUntenHeadline-3: 10px;
+	--abstandMenuItem: 25px;
+	
+	--headline-1: 3rem;
+	--headline-2: 2rem;
+	--headline-3: 1.5rem;
+	--headline-4: 1.3rem;
+	--headline-5: 1.1rem;
+	--headline-6: 1rem;	
+	--paragraph: 1rem;
+	--smallFont: 0.8rem;
+	
+	--lineHeightHeadline-1:3.2rem;
+	--lineHeightHeadline-2:2.2rem;
+	--lineHeightHeadline-3:1.7rem;
+	--lineHeightHeadline-4:1.5rem;
+	--lineHeightHeadline-5:1.3rem;
+	--lineHeightHeadline-6:1.3rem;
+	--lineHeightParagraph:1.2rem;
+	
+	--colorBorderTable: #0A321E;
+	--colorTableHead: #5D6B84;
+	--colorTableRow: #9CAAC3;
+	--colorFont: black;
+	--colorLink: #0A321E;
+	--colorLinkHover: lightgreen;
+	--colorMenuItem:white;
+	--colorMenuItemHover:#0A321E;
+	--colorSubMenuItemHover:white;
+	--colorButton:#0A321E;
+	--colorButtonText:white;
+	--colorButtonHover:darkgreen;
+	--colorButtonTextHover:white;
+	--colorCopyright:white;
+	--colorCopyrightLink:green;
+	
+	--fontFamily:Arial, sans-serif;
+	--fontAwesome:"Font Awesome 5 Free";
+	
+	--backgroundFooter:#0A321E;
+	--backgroundHeader:#0A321E;
+	--backgroundMenuItemHover:#68BD4B;
+	--backgroundSubmenu:#46962B;
+	--backgroundSubMenuItemHover:#0A321E;
+	--backgroundMobileMenu:#68BD4B;
+	
+}

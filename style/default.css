@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+	-webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-break: break-word;
+    color:var(--colorFont);
+    font-family:var(--fontFamily);
+    position: relative;
+}
+
+html, body, #mb-container{
+	height: 100%;
+	width: 100%;
+}
+#mb-container > header,
+#mb-container > main,
+#mb-container > footer{
+	width: 100%;
+}
+
+
+#mb-container{
+	display: flex;
+	flex-direction: column;
+	}
+	#mb-container > main{
+		flex: 1 0 auto;
+	}
+
+
+.satzspiegel{
+	max-width: 1406px;
+	margin: 0 auto;
+	padding:0 var(--abstandSeiten);
+	width: 100%;
+}
+
+
+.herz:after{
+	content:"\f004";
+	color:var(--colorLink);
+	font-size:var(--smallFont);
+	display: inline-block;
+	font-weight: 700;
+	font-family:var(--fontAwesome);
+}

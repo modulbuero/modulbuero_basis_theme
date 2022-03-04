@@ -1,0 +1,29 @@
+/*
+ *Seitenleiste/widget
+ */
+.block-editor-block-list__layout .wp-block .components-disabled iframe{
+    min-height:40px;
+}
+
+.editor-styles-wrapper .block-editor-block-list__layout > h3:hover,
+.editor-styles-wrapper .block-editor-block-list__layout > h2:hover,
+.editor-styles-wrapper .block-editor-block-list__layout > p:hover,
+.editor-styles-wrapper .block-editor-block-list__layout > div:hover{
+	box-shadow: inset 0 0 6px #e9e9e9;
+}
+
+/*
+ *  Metafelder
+ */
+ /*Allgemein*/
+.edit-post-meta-boxes-area .postbox-container .inside label{
+    min-width: 80px;
+    display: inline-block;
+}
+/*Termine*/
+.mbgi-termine-meta-box{
+    display:flex;
+    flex-direction: column;
+    }
+
+ /*Datei (Upload)*/
